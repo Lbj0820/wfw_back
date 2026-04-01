@@ -9,14 +9,14 @@ public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "TB_COM0110_USER_seq")
     @SequenceGenerator(name = "TB_COM0110_USER_seq", sequenceName = "TB_COM0110_USER_SEQ", allocationSize = 1)
-    private Long userId;
+    private String USR_ID;
 
     private String usrnm;
     private String pwd;
 
     // Getter / Setter
-    public Long getUserId() {
-        return userId;
+    public String getUserId() {
+        return USR_ID;
     }
 
     public String getUsrnm() {
